@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "vice",
+            "request": "launch",
+            "name": "Launch Vice",
+            "program": "${workspaceFolder}/build/off-by-one.prg",
+            "preLaunchTask": "${defaultBuildTask}"
+        },
+        {
+            "type": "vice",
+            "request": "attach",
+            "name": "Attach Vice",
+            "hostname": "localhost",
+            "port": 6502,
+            "preLaunchTask": "${defaultBuildTask}"
+        },
+        {
+            "type": "6502",
+            "request": "launch",
+            "name": "Launch 6502",
+            "preLaunchTask": "${defaultBuildTask}"
+        }
+    ]
+}

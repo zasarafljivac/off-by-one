@@ -1,0 +1,13 @@
+{
+    "name": "off-by-one",
+    "description": "Project off-by-one",
+    "toolkit": "kick",
+    "sources": [
+        "src/main.asm"
+    ],
+    "build": "debug",
+    "definitions": [],
+    "includes": [],
+    "args": [],
+    "compiler": ""
+}
