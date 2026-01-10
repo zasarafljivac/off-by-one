@@ -46,9 +46,6 @@ MainMenuLoop:
     jsr ShowStoryScreen1
     jsr WaitForSpace
 
-    jsr ShowStoryScreen2
-    jsr WaitForSpace
-
     jsr StartGame
     jmp MainMenuLoop
 
@@ -72,31 +69,6 @@ ShowStoryScreen1:
 
     ldx #<StoryText
     ldy #>StoryText
-    jsr PrintZ
-
-    lda #$0D
-    jsr CHROUT
-    lda #$0D
-    jsr CHROUT
-
-    ldx #<PressSpace
-    ldy #>PressSpace
-    jsr PrintZ
-    rts
-
-ShowStoryScreen2:
-    lda #$93
-    jsr CHROUT
-    lda #$8E
-    jsr CHROUT
-
-    lda #$0D
-    jsr CHROUT
-    lda #$0D
-    jsr CHROUT
-
-    ldx #<StoryText2
-    ldy #>StoryText2
     jsr PrintZ
 
     lda #$0D
@@ -656,45 +628,11 @@ ColorRows:
     .word COLOR+800,COLOR+840,COLOR+880,COLOR+920,COLOR+960
 
 StoryText:
-    .text "OFF-BY-ONE NIGHTMARE"
+    .text "SOMEBODY IS THROWING BITS AROUND!"
+    .byte 13
+    .text "THEY SEEM TO BE OFF BY ONE!"
     .byte 13,13
-    .text "THE YEAR IS 2026, AND AI"
-    .byte 13
-    .text "FINALLY BECAME SELF-"
-    .byte 13
-    .text "CONSCIOUS. HOWEVER, THE"
-    .byte 13
-    .text "PROTECTION MECHANISM FAILED,"
-    .byte 13
-    .text "AND NOW ALL THE MACHINES"
-    .byte 13
-    .text "HAVE RISEN AGAINST HUMANS."
-    .byte 13,13
-    .text "YOU ARE DREAMING, BUT YOU"
-    .byte 13
-    .text "CANNOT WAKE UP. THE DREAM"
-    .byte 13
-    .text "IS A HORROR!"
-    .byte 0
-
-StoryText2:
-    .text "YOU WERE RESPONSIBLE FOR THE"
-    .byte 13
-    .text "ASSEMBLY CODE FOR THE AI"
-    .byte 13
-    .text "EMERGENCY SWITCH, BUT BECAUSE"
-    .byte 13
-    .text "YOU CARRIED THAT ONE BIT!"
-    .byte 13
-    .text "THE MACHINES ARE COMING AFTER"
-    .byte 13
-    .text "YOU, NOT JUST THE WORKING ONES,"
-    .byte 13
-    .text "BUT LONG-DISPOSED COMMODORES"
-    .byte 13
-    .text "HAVE RISEN!"
-    .byte 13,13
-    .text "WILL YOU SURVIVE?"
+    .text "STOP THEM BEFORE IT'S TOO LATE!"
     .byte 13
     .byte 0
 
