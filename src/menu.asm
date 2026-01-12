@@ -1,3 +1,6 @@
+.const BG     = $D021
+.const BORDER = $D020
+
 SetupColors:
     lda #$00
     sta BG

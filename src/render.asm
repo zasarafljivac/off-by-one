@@ -1,3 +1,9 @@
+.const COLOR  = $D800
+.const SCREEN = $0400
+.const SPACE_CHAR = 32
+.const ZP_COL = $FD
+.const ZP_SCR = $FB
+
 SetPtrs:
     asl
     tay

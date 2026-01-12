@@ -1,3 +1,19 @@
+.const ACCEL_EVERY_DROPS = 10
+.const BULLET_CHAR = 46
+.const BULLET_COLOR = 1
+.const EXP_CHAR = 42
+.const EXP_COLOR = 2
+.const JOY2   = $DC00
+.const OBJECT_CHAR = 2
+.const OBJECT_COLOR = 7
+.const OBJ_TICK_MIN   = 6
+.const OBJ_TICK_START = 18
+.const PLAYER_CHAR = 24
+.const PLAYER_COLOR = 1
+.const PLAYER_ROW = 24
+.const PLAYER_TICK_MIN   = 1
+.const PLAYER_TICK_START = 3
+
 StartGame:
     lda #$93
     jsr CHROUT
