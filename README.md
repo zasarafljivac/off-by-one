@@ -6,6 +6,10 @@ A Commodore 64 assembly demo built with KickAssembler, the VICE emulator, VSCode
 
 Off-by-one is a common bug where a loop or index is one step too far or too short, causing a boundary miss or overrun.
 
+## Blog post
+
+ https://almirzulic.com/posts/the-return-of-commodore-64/
+
 ## Requirements
 
 There are many ways to set up a C64 development environment. This project uses the following tools:
