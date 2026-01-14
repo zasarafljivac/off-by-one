@@ -10,6 +10,13 @@
         },
         {
             "type": "vice",
+            "request": "launch",
+            "name": "Launch Vice (ACME)",
+            "program": "${workspaceFolder}/build/off-by-one-acme.prg",
+            "preLaunchTask": "build acme"
+        },
+        {
+            "type": "vice",
             "request": "attach",
             "name": "Attach Vice",
             "hostname": "localhost",

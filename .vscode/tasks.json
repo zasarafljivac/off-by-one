@@ -8,6 +8,22 @@
                 "isDefault": true
             },
             "label": "build project"
+        },
+        {
+            "label": "build acme",
+            "type": "shell",
+            "command": "acme",
+            "args": [
+                "-f",
+                "cbm",
+                "-o",
+                "${workspaceFolder}/build/off-by-one-acme.prg",
+                "${workspaceFolder}/src/main-acme.asm"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
         }
     ]
 }
